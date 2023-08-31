@@ -12,5 +12,8 @@ export default defineNuxtConfig({
         {rel: "shortcut icon", type: "image/x-icon", href: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png"}
       ]
     }
+  },
+  runtimeConfig: {
+    apiKey: process.env.OMDB_API_KEY
   }
 })
