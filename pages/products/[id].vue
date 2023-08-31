@@ -1,4 +1,9 @@
 <template>
+    <Head>
+        <Title>Nuxtjs 3 App | {{ product.title }}</Title>
+        <Meta name="description" :content="product.description" />
+    </Head>
+    
     <div class="grid grid-cols-2 gap-5">
         <div class="mr-5">
             <img :src="product.image" class="w-full" alt="">

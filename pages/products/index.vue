@@ -9,7 +9,13 @@
 //     layout: 'products'
 // })
 const { data: products } = useFetch('https://fakestoreapi.com/products')
-console.log(products)
+
+useHead({
+    title: "Nuxtjs 3 App | All Products",
+    // meta: [
+    //     {name: 'description', content: ''}
+    // ]
+})
 </script>
 
 <style lang="scss" scoped>
